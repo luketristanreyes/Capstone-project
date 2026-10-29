@@ -1,0 +1,9 @@
+Metric,Count
+Input files,2
+Total input rows,243425
+Invalid or incomplete rows excluded,584
+Exact duplicate rows removed after standardisation,56665
+Conflicting rows excluded for review,941
+Final clean rows,185235
+Missing cells in final dataset,0
+Duplicate measurement keys in final dataset,0
