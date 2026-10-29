@@ -1,0 +1,17 @@
+{
+  "site": "QUS",
+  "task": "Next-hour NO2 regression",
+  "horizon_hours": 1,
+  "timestamp_assumption": "Source timestamps are observation instants. Clock-hour bins are labelled by interval end. Confirm source timezone and interval conventions.",
+  "availability_assumption": "The hourly interval ending at forecast issue time is available immediately, with no reporting delay.",
+  "target": "NO2 for the hourly interval ending HORIZON_HOURS after issue time",
+  "split": "Chronological 60% / 20% / 20%, with boundary gaps",
+  "missing_targets": "Excluded, never imputed",
+  "predictor_imputation": "Training medians plus missing indicators",
+  "scaling": "StandardScaler fitted on training data only",
+  "outliers": "Retained; verify suspicious source readings",
+  "evaluation": "Designed for sequential forecasts updated with newly observed measurements. Not fixed-origin multi-step forecasting.",
+  "predictors_before_screening": 77,
+  "predictors_after_screening": 65,
+  "processed_columns": 117
+}
